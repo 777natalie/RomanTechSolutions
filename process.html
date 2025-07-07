@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roman Tech Solutions</title>
+  <link rel="stylesheet" href="css/process.css">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <script>
+      window.addEventListener('scroll', function () {
+        const header = document.querySelector('header');
+        if (window.scrollY > 50) {
+          header.classList.add('scrolled');
+        } else {
+          header.classList.remove('scrolled');
+        }
+      });
+    </script>
+  
+    <div class="header-container">
+      <div class="logo">
+        <a href="#home">
+            <img src="images/rtslogo.png" alt="Roman Tech Logo" />
+          </a>
+      </div>
+
+      <script>
+        document.querySelector('.logo a').addEventListener('click', function(e) {
+          e.preventDefault();
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+      </script>
+      
+  
+      <nav>
+        <ul>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </nav>
+  
+      <div class="header-right">
+        <a href="#" class="btn">Contact Us</a>
+        <div class="location">
+          <img src="images/location-pins.png" alt="Location icon" class="location-icon" />
+          <span>Oklahoma City,<br>OK 73129</span>
+        </div>
+      </div>
+      
+  </header>
+
+<!--  MAIN "PROCESS SECTION" -->
+<section class="Processes">
+    <div class = "processes-header-wrapper">
+        <h1 class="processes-header">Our <span style="color:#0049af; font-weight:700;">Process</span></h1>
+    </div>
+
+    <div class="processes-content">
+        <h3 class ="processes-sub-header">
+            this is a trial sentence
+
+        </h3>
+    </div>
+
+
+</section>
+
+
+</body>
+</html>
