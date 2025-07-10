@@ -50,6 +50,7 @@ header.scrolled {
 
 /* FLEX CONTAINER -- inside header - aligns logo, nav, contact, location*/
 .header-container {
+  flex-wrap: wrap;
   max-width: none;
   margin: 0 auto;
   display: flex;
