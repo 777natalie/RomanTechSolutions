@@ -36,8 +36,9 @@
         });
       </script>
       
-  
-      <nav>
+      <div class="hamburger" id="hamburger">&#9776;</div>
+
+      <nav class="nav-menu" id="nav-menu">
         <ul>
           <li><a href="#process">Process</a></li>
           <li><a href="#services">Services</a></li>
@@ -45,6 +46,7 @@
           <li><a href="about.html">About</a></li>
         </ul>
       </nav>
+
   
       <div class="header-right">
         <a href="#" class="btn">Contact Us</a>
@@ -53,7 +55,7 @@
           <span>Oklahoma City,<br>OK 73129</span>
         </div>
       </div>
-      
+     </div> 
   </header>
   
   <!-- Hero Section -->
@@ -265,7 +267,7 @@
   
         <!-- RIGHT SIDE: FORM -->
         <div class="consult-form scroll-fade">
-          <form action="#" method="POST">
+          <form action="https://formspree.io/f/mzzglpdk" method="POST">
             <div class="form-row">
               <input type="text" name="firstName" placeholder="First Name" required>
               <input type="text" name="lastName" placeholder="Last Name" required>
@@ -332,6 +334,9 @@
 
         
     </script>
+    
+
+
     <script>
         const observer = new IntersectionObserver((entries) => {
           entries.forEach(entry => {
@@ -370,6 +375,30 @@
             } else {
               answer.style.maxHeight = null;
             }
+          });
+        });
+    </script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+
+        hamburger.addEventListener('click', function () {
+        navMenu.classList.toggle('active');
+        });
+
+        // Collapse nav on link click
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+        link.addEventListener('click', () => {
+          navMenu.classList.remove('active');
+        });
+        });
+
+        // Smooth scroll logo
+        document.querySelector('.logo a').addEventListener('click', function (e) {
+          e.preventDefault();
+          window.scrollTo({ top: 0, behavior: 'smooth' });
           });
         });
     </script>
