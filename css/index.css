@@ -142,10 +142,10 @@ nav a:hover {
     font-size: 2rem;
     color: #0049af;
     cursor: pointer;
-    position: absolute;
+    position: relative;
     top: 1.5rem;
     right: 1.5rem;
-    z-index: 1100;
+    z-index: 1000;
   }
 
   /* Mobile nav menu styles */
