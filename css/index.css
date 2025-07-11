@@ -28,8 +28,7 @@ body {
   font-family: 'Archivo', sans-serif;
   line-height: 1.6;
   color: #111;
-  background: url('../images/background-1.png') no-repeat center center fixed;
-  background-size: cover;
+  background: #e3e3e3;
 }
 
 /* HEADER – fixed at top, with rounded bottom corners */
@@ -263,9 +262,11 @@ nav a:hover {
     justify-content: space-between;
     padding: 4rem;
     gap: 3rem;
-    margin-top: 4rem; 
+    /*margin-top: 4rem; */
     flex-wrap: wrap;
     font-weight: 300;
+    background: url('../images/background-1.png') no-repeat center center fixed;
+    background-size: cover;
   }
 
   /* wraps the main header text */ 
@@ -273,6 +274,7 @@ nav a:hover {
   .hero-header-wrapper {
     width: 100%;
     margin-bottom: 1rem;
+    margin-top: 2rem;
   }
   
   /* BIG HERO HEADER -- "Oklahomas Trusted..." */
