@@ -157,12 +157,13 @@ nav a:hover {
     flex-direction: row;
     margin: 0;
   }
+
   .header-container{
     display: flex;
     flex-direction: row;             /* side-by-side */
     justify-content: space-between;    /* align left */
     align-items: center;            /* vertical centering */
-    padding: 0.5rem .5rem;
+    padding: 0.5rem 1rem;
   }
 
   /* Mobile nav menu styles */
@@ -234,11 +235,9 @@ nav a:hover {
     flex-shrink:0;
   }
   .logo img {
-    height: 40px;
+    height: 60px;
     width: auto;
-    max-height: none;
     max-width: none; /* optional cap */
-    display: block;
   }
 
 }
