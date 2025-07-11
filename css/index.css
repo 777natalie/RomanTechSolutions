@@ -160,7 +160,7 @@ nav a:hover {
     display: none;
     flex-direction: column;
     background-color: black;
-    position: absolute;
+    position:fixed;
     top: 0;  /* right below header */
     right: 0;
     left: 0;
