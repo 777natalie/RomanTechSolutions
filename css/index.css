@@ -146,7 +146,7 @@ nav a:hover {
   /* Show hamburger icon */
   .hamburger {
     display: flex;
-    font-size: 2rem;
+    font-size: auto;
     color: #0049af;
     cursor: pointer;
     position: relative;
