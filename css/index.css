@@ -230,6 +230,9 @@ nav a:hover {
     display: none;
   }
 
+  .logo {
+    flex-shrink:0;
+  }
   .logo img{
     height: flex;
   }
