@@ -233,10 +233,14 @@ nav a:hover {
   .logo {
     flex-shrink:0;
   }
-  .logo img{
-    height: 60px;
-    max-width: none;
-  }
+  .logo img {
+  height: 70px;         
+  width: auto;
+  max-height: none;
+  max-width: none;
+  display: block;
+}
+
 }
 
 
