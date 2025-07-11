@@ -58,6 +58,7 @@ header.scrolled {
 .header-container {
   flex-wrap: wrap;
   max-width: none;
+  flex-direction: row;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -154,6 +155,7 @@ nav a:hover {
     z-index: 1000;
     justify-content: flex-end;
     flex-direction: row;
+    margin: 0;
   }
 
   /* Mobile nav menu styles */
