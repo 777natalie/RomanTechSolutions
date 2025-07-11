@@ -234,10 +234,10 @@ nav a:hover {
     flex-shrink:0;
   }
   .logo img {
-    height: 40px !important;
+    height: 70px !important;
     width: auto;
     max-height: none;
-    max-width: 150px; /* optional cap */
+    max-width: none; /* optional cap */
     display: block;
   }
 
