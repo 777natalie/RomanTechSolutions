@@ -235,7 +235,7 @@ nav a:hover {
     align-items: left;
   }
   .logo img {
-   height: 100px !important;
+   height: 70px !important;
    width: auto;
    max-width: none;
    display: block;
@@ -265,7 +265,7 @@ nav a:hover {
     /*margin-top: 4rem; */
     flex-wrap: wrap;
     font-weight: 300;
-    background: url('../images/background-1.png') no-repeat center center fixed;
+    background: url('../images/background-1.png') no-repeat center center;
     background-size: cover;
   }
 
