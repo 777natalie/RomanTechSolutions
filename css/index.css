@@ -160,10 +160,9 @@ nav a:hover {
   .header-container{
     display: flex;
     flex-direction: row;             /* side-by-side */
-    justify-content: flex-start;    /* align left */
+    justify-content: space-between;    /* align left */
     align-items: center;            /* vertical centering */
     padding: 0.5rem 1rem;
-    gap: 10px;
   }
 
   /* Mobile nav menu styles */
@@ -235,10 +234,10 @@ nav a:hover {
     flex-shrink:0;
   }
   .logo img {
-    height: 60px !important;
+    height: 50px !important;
     width: auto;
     max-height: none;
-    max-width: 180px; /* optional cap */
+    max-width: 150px; /* optional cap */
     display: block;
   }
 
