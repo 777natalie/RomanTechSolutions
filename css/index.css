@@ -163,7 +163,7 @@ nav a:hover {
     flex-direction: row;             /* side-by-side */
     justify-content: space-between;    /* align left */
     align-items: center;            /* vertical centering */
-    padding: 0.5rem 1rem;
+    padding: 1rem;
   }
 
   /* Mobile nav menu styles */
