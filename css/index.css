@@ -235,8 +235,10 @@ nav a:hover {
     flex-shrink:0;
   }
   .logo img {
-    height: 10vw;
-    max-height: 120px;
+   height: 100px !important;
+   width: auto;
+   max-width: none;
+   display: block;
   }
 
 }
