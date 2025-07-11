@@ -160,9 +160,9 @@ nav a:hover {
   .header-container{
     display: flex;
     flex-direction: row;             /* side-by-side */
-    justify-content: center;    /* align left */
+    justify-content: space-between;    /* align left */
     align-items: center;            /* vertical centering */
-    gap: 10px;                      /* spacing between logo and hamburger */
+                        /* spacing between logo and hamburger */
     padding: 0.5rem 1rem;
   }
 
