@@ -152,7 +152,7 @@ nav a:hover {
     /*top: 1.5rem;
     right: 1.5rem;*/
     z-index: 1000;
-    justify-content: space-between;
+    justify-content: flex-end;
   }
 
   /* Mobile nav menu styles */
