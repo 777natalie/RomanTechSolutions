@@ -142,7 +142,12 @@ nav a:hover {
 /* Mobile styles */
 @media (max-width: 768px) {
   /* Hide desktop nav menu */
-
+  .header-container {
+    justify-content: center; /* center items horizontally */
+    flex-direction: column;  /* stack logo and hamburger vertically */
+    align-items: center;     /* center everything */
+  }
+  
   /* Show hamburger icon */
   .hamburger {
     display: block;
