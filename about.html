@@ -9,58 +9,56 @@
 
 </head>
 <body>
-  <!-- Header -->
 
-  <header>
+<!-- Header -->
+<header>
+
+  <script>
+    window.addEventListener('scroll', function () {
+      const header = document.querySelector('header');
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+  </script>
+
+  <div class="header-container">
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/rtslogo.png" alt="Roman Tech Logo" />
+      </a>
+    </div>
+
     <script>
-      window.addEventListener('scroll', function () {
-        const header = document.querySelector('header');
-        if (window.scrollY > 50) {
-          header.classList.add('scrolled');
-        } else {
-          header.classList.remove('scrolled');
-        }
+      document.querySelector('.logo a').addEventListener('click', function (e) {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
       });
     </script>
-  
-    <div class="header-container">
 
-      <div class="hamburger" id="hamburger">&#9776;</div>
-      <div class="logo">
-        <a href="#home">
-            <img src="images/rtslogo.png" alt="Roman Tech Logo" />
-          </a>
+    <div class="hamburger" id="hamburger">&#9776;</div>
 
+    <nav class="nav-menu" id="nav-menu">
+      <ul>
+        <li><a href="index.html#process">Process</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="index.html#faq">FAQ</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-right">
+      <a href="index.html#consult" class="btn">Contact Us</a>
+      <div class="location">
+        <img src="images/location-pins.png" alt="Location icon" class="location-icon" />
+        <span>Oklahoma City,<br>OK 73129</span>
       </div>
+    </div>
+  </div>
+</header>
 
-      <script>
-        document.querySelector('.logo a').addEventListener('click', function(e) {
-          e.preventDefault();
-          window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
-      </script>
-      
-      
-
-      <nav class="nav-menu" id="nav-menu">
-        <ul>
-          <li><a href="index.html#process">Process</a></li>
-          <li><a href="index.html#services">Services</a></li>
-          <li><a href="index.html#faq">FAQ</a></li>
-          <li><a href="about.html">About</a></li>
-        </ul>
-      </nav>
-
-  
-      <div class="header-right">
-        <a href="#" class="btn">Contact Us</a>
-        <div class="location">
-          <img src="images/location-pins.png" alt="Location icon" class="location-icon" />
-          <span>Oklahoma City,<br>OK 73129</span>
-        </div>
-      </div>
-     </div> 
-  </header>
   
   <!-- ABOUT SECTION -->
   <section class="about-section scroll-fade" id="about">
@@ -73,7 +71,7 @@
         </div>
         
         <div class="about-paragraph services-par">
-          At Roman Tech Solutions, we specialize in residential and commercial technology installations — from Starlink satellite setups and security systems to TV mounting and smart home integration. Our goal is to provide seamless, stress-free solutions tailored to your needs.
+          At Roman Tech Solutions, we specialize in residential and commercial technology installations — from Starlink satellite setups and security systems to smart home integration. Our goal is to provide seamless, stress-free solutions tailored to your needs.
         </div>
         
         <div class="about-paragraph1 commitment-par">
@@ -111,7 +109,7 @@
             <h4>Quick Links</h4>
             <ul>
                 <li><a href="index.html#process">Process</a></li>
-                <li><a href="index.html#services">Services</a></li>
+                <li><a href="services.html">Services</a></li>
                 <li><a href="index.html#faq">FAQ</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="index.html#consult">Free Consultation</a></li>

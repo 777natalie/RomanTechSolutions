@@ -1,11 +1,14 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-
-  
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scroll caused by 100vw */
+}
 
 /* Start hidden */
 .scroll-fade {
@@ -25,7 +28,7 @@ body {
   font-family: 'Archivo', sans-serif;
   line-height: 1.6;
   color: #111;
-  background: #e7e7e7;
+  background: url('../images/services-background.PNG');
   background-size: cover;
 }
 
@@ -251,156 +254,160 @@ nav a:hover {
 }
 
 
-  
   /* Use Archivo Black for bold headings, nav, etc. */
   h1, h2, .main-header, nav a {
     font-family: 'Archivo Black', sans-serif;
   }
 
+.all-services {
+  padding: 3rem 1.5rem;
+  background: url('../images/services-background.PNG') no-repeat center center;
+  background-size: cover;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
 
-  .about-section {
-    margin-top: 3rem;
-    padding: 7rem 2rem 4rem 2rem; /* space from fixed header */
-    background: #e7e7e7;
-    color: #222;
+/* Overlay behind the content */
+.all-services::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(227, 227, 227, 0.88); /* light gray with opacity */
+  z-index: -1; /* behind the content */
+  pointer-events: none;
+}
 
-  }
-  
-  .about-text h2 {
-    font-size: 2rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-bottom: 2rem;
-    color: #0049af;
-    line-height: 1;
-  }
-  
-  .about-paragraph {
-    margin-bottom: 1.5rem;
-    font-size: 1.1rem;
-    line-height: 1.5;
-  }
-  .about-paragraph1 {
-    margin-bottom: 1.5rem;
-    font-size: 1.1rem;
-    line-height: 1.5;
-    border-bottom: 3px solid #0049af; 
-  }
-  
-  /* Optional: distinct style for Partner section header */
-  .partner-par strong {
-    font-size: 1.3rem;
-    color: #0049af;
-  }
-  
-  /* Resume download button */
-  .resume-download-btn {
-    display: inline-block;
-    background-color: #0049af;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 40px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-    margin-top: 1rem;
-  }
-  
-  .resume-download-btn:hover {
-    background-color: #003080;
-  }
-  
-  /* About image styling */
-  .about-image img {
-    max-width: 400px;
-    width: 100%;
-    border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-  }
-  
-  /* Layout container */
-  .about-container {
-    display: flex;
-    gap: 2rem;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  
-  .about-text {
-    flex: 1 1 400px;
-    max-width: 600px;
-  }
-  
-  .about-image {
-    flex: 1 1 300px;
-    text-align: center;
-  }
-  
-  
-  /* FOOTER STYLES */
-  .footer {
-      background-color: #111;
-      color: #e3e3e3;
-      padding: 4rem 2rem 2rem 2rem;
-      font-size: 0.95rem;
-    }
-  
-  .footer-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 1300px;
-    margin: auto;
-    gap: 2rem;
-  }
-  
-  .footer-left,
-  .footer-middle,
-  .footer-right {
-    flex: 1 1 250px;
-  }
-  
-  .footer-logo {
-    width: 200px;
-    margin-bottom: 1rem;
-  }
-  
-  .footer h4 {
-    font-size: 1.1rem;
-    margin-bottom: 1rem;
-    color: #ffffff;
-    text-transform: uppercase;
-  }
-  
-  .footer p {
-    line-height: 1.5;
-  }
-  
-  .footer ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .footer ul li {
-    margin-bottom: 0.6rem;
-  }
-  
-  .footer ul li a {
-    color: #e3e3e3;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
-  .footer ul li a:hover {
-    color: #0049af;
-  }
-  
-  .footer-bottom {
-    text-align: center;
-    border-top: 1px solid #444;
-    padding-top: 1rem;
-    margin-top: 2rem;
-    font-size: 0.85rem;
-  }
-  
+.services-title {
+  margin-top: 5rem;
+  font-size: 2.5rem;
+  color: #0049af;
+  margin-bottom: 1rem;
+}
+
+.services-intro {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.services-list {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.service-item {
+  margin-bottom: 1.2rem;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.5rem;
+}
+
+.service-toggle {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #0049af;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  padding: 0.5rem 0;
+  transition: color 0.3s ease;
+}
+
+.service-toggle:hover {
+  color: #002f6c;
+}
+
+.service-details {
+  display: none;
+  padding: 0.5rem 0 1rem 0;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.consult-link {
+  display: inline-block;
+  margin-top: 0.7rem;
+  background-color: #0049af;
+  color: white;
+  padding: 0.6rem 1.4rem;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.consult-link:hover {
+  background-color: #002f6c;
+}
+
+/* FOOTER STYLES */
+.footer {
+  background-color: #111;
+  color: #e3e3e3;
+  padding: 4rem 2rem 2rem 2rem;
+  font-size: 0.95rem;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1300px;
+  margin: auto;
+  gap: 2rem;
+}
+
+.footer-left,
+.footer-middle,
+.footer-right {
+  flex: 1 1 250px;
+}
+
+.footer-logo {
+  width: 200px;
+  margin-bottom: 1rem;
+}
+
+.footer h4 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.footer p {
+  line-height: 1.5;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin-bottom: 0.6rem;
+}
+
+.footer ul li a {
+  color: #e3e3e3;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer ul li a:hover {
+  color: #0049af;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #444;
+  padding-top: 1rem;
+  margin-top: 2rem;
+  font-size: 0.85rem;
+}

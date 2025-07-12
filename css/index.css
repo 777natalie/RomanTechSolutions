@@ -674,6 +674,45 @@ body {
   transform: translateY(-4px);
 }
 
+.see-more-btn {
+  background-color: transparent;
+  color: white;
+  padding: 1rem 2.5rem 1rem 1.5rem; /* extra left padding for text, right padding for arrow */
+  border-radius: 40px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.2rem;
+  position: relative;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Add arrow image as a separate element with ::after */
+.see-more-btn::after {
+  content: "";
+  display: inline-block;
+  width: 50px;  /* adjust size as needed */
+  height: 50px;
+  background: url('../images/arrow.PNG') no-repeat center center;
+  background-size: contain;
+  margin-left: 10px;
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect */
+.see-more-btn:hover,
+.see-more-btn:focus {
+  background-color: #002e75;
+  transform: translateY(-3px);
+}
+
+.see-more-btn:hover::after,
+.see-more-btn:focus::after {
+  transform: translateX(5px); /* slight arrow move on hover */
+}
+
 /* FAQ SECTION on home page */
 .faq {
   display: flex;
@@ -862,6 +901,48 @@ textarea {
 .form-btn:hover {
   background-color: #003a91;
   transform: translateY(-3px);
+}
+
+form select {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  margin: 0.5rem 0 1rem 0;
+  font-family: 'Archivo', sans-serif;
+  font-size: 1rem;
+  border: 2px solid #a7a7a7;
+  border-radius: 40px;
+  background-color: white;
+  color: #111;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+  position: relative;
+  transition: border-color 0.3s ease;
+}
+
+/* Container needed to position the arrow */
+.select-wrapper {
+  position: relative;
+}
+
+/* Arrow using a pseudo-element */
+.select-wrapper::after {
+  content: "\2325";  /* Unicode down arrow */
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #a7a7a7;
+  font-size: 1rem;
+}
+
+/* Hover and focus */
+form select:hover,
+form select:focus {
+  border-color: #002e75;
+  outline: none;
 }
 
 
