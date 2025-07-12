@@ -162,7 +162,7 @@ nav a:hover {
     display: flex;
     flex-direction: row;             /* side-by-side */
     justify-content: space-between;    /* align left */
-    align-items: center;            /* vertical centering */
+                /* vertical centering */
     padding: 1rem 1rem;
   }
 
