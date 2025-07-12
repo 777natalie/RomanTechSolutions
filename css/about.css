@@ -154,6 +154,7 @@
     cursor: pointer;
     z-index: 1001;
     margin: 0;
+    width:100%;
   }
 
 
@@ -234,6 +235,7 @@
 
   .logo {
     flex-shrink:0;
+    width: 100%;
   }
   .logo img {
    height: 70px;
