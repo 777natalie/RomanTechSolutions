@@ -1014,7 +1014,7 @@ form select:focus {
     min-height: auto; /* let it fit content */
     padding: 2rem 1rem;
     flex-direction: column; /* stack hero content vertically */
-    margin-top: 80px; /* keep margin so header doesn’t overlap */
+    /* keep margin so header doesn’t overlap */
   }
   .hero-image img {
     width: 100%; /* make the image responsive */
@@ -1025,7 +1025,7 @@ form select:focus {
   
   .main-header {
     font-size: 2rem;
-    margin-top: 20px;
+    margin-top: 10rem;
   }
   
   .sub-header {
@@ -1033,6 +1033,6 @@ form select:focus {
   }
 
   .btn-container {
-    margin-top: 1.5rem;
+    margin-top: 2rem;
   }
 }
