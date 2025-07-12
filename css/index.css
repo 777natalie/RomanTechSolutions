@@ -233,10 +233,9 @@ nav a:hover {
 
   .logo {
     flex-shrink:0;
-    align-items: left;
   }
   .logo img {
-   height: 100px !important;
+   height: 70px;
    width: auto;
    max-width: none;
    display: block;
