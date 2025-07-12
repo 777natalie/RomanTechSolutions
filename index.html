@@ -10,53 +10,53 @@
 </head>
 <body>
   <!-- Header -->
-  <header>
+<header>
+  <script>
+    window.addEventListener('scroll', function () {
+      const header = document.querySelector('header');
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+  </script>
+
+  <div class="header-container">
+    <div class="logo">
+      <a href="#home">
+        <img src="images/rtslogo.png" alt="Roman Tech Logo" />
+      </a>
+    </div>
+
     <script>
-      window.addEventListener('scroll', function () {
-        const header = document.querySelector('header');
-        if (window.scrollY > 50) {
-          header.classList.add('scrolled');
-        } else {
-          header.classList.remove('scrolled');
-        }
+      document.querySelector('.logo a').addEventListener('click', function (e) {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
       });
     </script>
-  
-    <div class="header-container">
-      <div class="logo">
-        <a href="#home">
-            <img src="images/rtslogo.png" alt="Roman Tech Logo" />
-          </a>
+
+    <div class="hamburger" id="hamburger">&#9776;</div>
+
+    <nav class="nav-menu" id="nav-menu">
+      <ul>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-right">
+      <a href="#" class="btn">Contact Us</a>
+      <div class="location">
+        <img src="images/location-pins.png" alt="Location icon" class="location-icon" />
+        <span>Oklahoma City,<br>OK 73129</span>
       </div>
+    </div>
+  </div>
+</header>
 
-      <script>
-        document.querySelector('.logo a').addEventListener('click', function(e) {
-          e.preventDefault();
-          window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
-      </script>
-      
-      <div class="hamburger" id="hamburger">&#9776;</div>
-
-      <nav class="nav-menu" id="nav-menu">
-        <ul>
-          <li><a href="#process">Process</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#faq">FAQ</a></li>
-          <li><a href="about.html">About</a></li>
-        </ul>
-      </nav>
-
-  
-      <div class="header-right">
-        <a href="#" class="btn">Contact Us</a>
-        <div class="location">
-          <img src="images/location-pins.png" alt="Location icon" class="location-icon" />
-          <span>Oklahoma City,<br>OK 73129</span>
-        </div>
-      </div>
-     </div> 
-  </header>
   
   <!-- Hero Section -->
   <section class="hero">
