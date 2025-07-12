@@ -235,7 +235,6 @@ nav a:hover {
     flex-shrink:0;
   }
   .logo img {
-   height: 70px;
    width: auto;
    max-width: none;
    display: block;
