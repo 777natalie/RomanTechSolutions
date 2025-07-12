@@ -242,8 +242,8 @@ nav a:hover {
   }
   .logo img {
     width: 100%;
-    height: auto;
-    max-height: 80px;             
+    height: 80px;
+    max-height: 100px;             
     display: block;
   }
 
