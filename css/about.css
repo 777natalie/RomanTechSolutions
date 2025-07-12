@@ -131,7 +131,7 @@
 /* Mobile styles */
 @media (max-width: 768px) {
 
-  /* Show hamburger icon */
+  /* Show hamburger icon 
   .hamburger {
     display: block;
     font-size: 2rem;
@@ -140,11 +140,23 @@
     position: relative;
     /*top: 1.5rem;
     right: 1.5rem;*/
-    z-index: 1000;
+    /* z-index: 1000;
     justify-content: space-between;
     flex-direction: row;
     margin: 0;
   }
+*/
+
+   .hamburger {
+    display: block;
+    font-size: 2rem;
+    color: #0049af;
+    cursor: pointer;
+    z-index: 1001;
+    margin: 0;
+  }
+
+
 
   .header-container{
     display: flex;
