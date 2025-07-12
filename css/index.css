@@ -236,7 +236,7 @@ nav a:hover {
     align-items: left;
   }
   .logo img {
-   height: 15vh !important;
+   max-height: 100%;
    width: auto;
    max-width: none;
    display: block;
