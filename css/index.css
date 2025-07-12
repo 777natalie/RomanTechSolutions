@@ -1010,10 +1010,12 @@ form select:focus {
 }
 
 @media (max-width: 768px) {
-  .hero {
-    padding-top: 100px; /* Adjust depending on mobile header height */
+    .hero {
+    min-height: auto; /* let it fit content */
+    padding: 2rem 1rem;
+    flex-direction: column; /* stack hero content vertically */
+    margin-top: 80px; /* keep margin so header doesn’t overlap */
   }
-  
   .hero-image img {
     width: 100%; /* make the image responsive */
     max-width: 300px;
