@@ -133,7 +133,7 @@
 
   /* Show hamburger icon */
   .hamburger {
-    display: flex;
+    display: block;
     font-size: 2rem;
     color: #0049af;
     cursor: pointer;
@@ -152,6 +152,7 @@
     justify-content: space-between;    /* align left */
     align-items: center;            /* vertical centering */
     padding: 1rem 1rem;
+    width: 100%;
   }
 
   /* Mobile nav menu styles */
@@ -221,15 +222,12 @@
 
   .logo {
     flex-shrink:0;
-    align-items: left;
   }
   .logo img {
-   max-width:none;
-   max-height:none;
    height: 70px;
-   width:auto;
+   width: auto;
    display: block;
-   position: relative;
+
   }
 
 }
