@@ -1015,7 +1015,6 @@ form select:focus {
     min-height: auto; /* let it fit content */
     padding: 2rem 1rem;
     flex-direction: column; /* stack hero content vertically */
-    margin-top: 80px; /* keep margin so header doesn’t overlap */
   }
   
   .hero-image img {
