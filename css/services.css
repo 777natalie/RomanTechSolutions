@@ -282,10 +282,11 @@ nav a:hover {
 }
 
 .services-title {
-  margin-top: 5rem;
+  margin-top: 7rem;
   font-size: 2.5rem;
   color: #0049af;
   margin-bottom: 1rem;
+  line-height: 1;
 }
 
 .services-intro {
