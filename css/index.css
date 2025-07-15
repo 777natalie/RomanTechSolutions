@@ -267,7 +267,7 @@ nav a:hover {
     padding: 10rem 4rem 4rem 4rem;
     gap: 3rem;
     flex-direction: column;
-    font-weight: 300;
+    font-weight: 250;
     overflow: hidden;
   }
 
@@ -302,7 +302,7 @@ nav a:hover {
   }
   
   .main-header {
-    font-size: 2.7rem;
+    font-size: 2.3rem;
     line-height: 1;
     font-weight: 300;
     margin-top: 7rem;
